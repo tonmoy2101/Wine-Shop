@@ -46,3 +46,74 @@
 .testimonialImagePerson {
     border-radius: 50%;
 }
+
+ /* home page slider starts */
+
+ @keyframes slideShow {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure .sliderImages {
+    text-align: center;
+    height: 500px;
+    top: 40%;
+    width: 20%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slideShow infinite;
+}
+.sliderImages {
+    width: 100%;
+    background-color: black;
+}
+
+  /* home page slider ends */
