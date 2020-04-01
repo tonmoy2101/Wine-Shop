@@ -55,9 +55,17 @@
             top: 40%;
             width: 20%;
             float: left;
-            display: flex;
+            /* display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center; */
+            position: relative;
+        }
+
+        #slider figure .sliderImages img {
+            height: 60%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         #slider figure {
@@ -69,9 +77,10 @@
             font-size: 0;
             animation: 20s slideShow infinite;
         }
+
         .sliderImages {
             width: 100%;
-            background-color: black;
+            background-color: #7E2D53;
         }
     </style>
 </head>
@@ -80,16 +89,17 @@
     <div id="slider">
         <figure>
             <div class="sliderImages">
-                <img src="./img/Home Page/bottle_PNG2102.png" alt="">
+                <h2 style="color: white;">Lorem Ipsum</h2>
+                <img src="./img/Home/newHome.png" alt="">
             </div>
             <div class="sliderImages">
-                <img src="./img/Home Page/bottle_PNG2103.png" alt="">
+                <img src="./img/Home/bottle_PNG2085.png" alt="">
             </div>
             <div class="sliderImages">
-                <img src="./img/Home Page/bottle_PNG2948 (1).png" alt="">
+                <img src="./img/Home/bottle_PNG2947.png" alt="">
             </div>
             <div class="sliderImages">
-                <img src="" alt="">
+                <img src="./img/Home/hiclipart.com(47).png" alt="">
             </div>
         </figure>
     </div>
