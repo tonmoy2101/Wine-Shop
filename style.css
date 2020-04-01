@@ -101,6 +101,9 @@
     align-items: center;
     justify-content: center;
 }
+#slider figure .sliderImages img {
+    height: 60%;
+}
 
 #slider figure {
     position: relative;
