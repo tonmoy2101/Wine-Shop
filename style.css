@@ -128,6 +128,27 @@
     margin-top: -1%;
     margin-left: 7%;
     text-align: center;
+    color: white;
+}
+
+.sliderContent {
+    transform: translate(65%, 80%);
+}
+
+.sliderContentText {
+    text-align: right;
+    color: white;
+    display: visible;
+    font-size: 12px;
+    width: 25%;
+}
+
+.shopNowBTNHomeSliderBanner {
+    padding: 3% 10%;
+    font-weight: 600;
+    color: #7E2D53;
+    border: none;
+    background-color: white;
 }
 
   /* home page slider ends */
