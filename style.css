@@ -6,29 +6,50 @@
 
 /* NavBar Style  */
 
-.navbar {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background: transparent;
-    z-index: 9;
-    min-height: 80px;
-  }
-  .navbar .icon-bar {
-    color: #fff;
-  }
+.header {
+    display: flex !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 0px 1% 15%;
+}
 
-  .navbar .navbar-nav .nav-link {
-    font-size: 13px;
-    font-weight: 500;
-    color: #eee;
-    letter-spacing: .5px;
-    margin: 15px 5px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-  
+.headerLogo {
+    width: 40%;
+}
+
+.navBar {
+    width: 60%;
+}
+
+.imageLogo {
+    max-width: 100px;
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: right;
+}
+
+li a:hover {
+    color: #1067a9;
+}
+
   /* NavBar Style Ends */
 
 
