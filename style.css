@@ -4,6 +4,34 @@
     padding: auto;
 } */
 
+/* NavBar Style  */
+
+.navbar {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 9;
+    min-height: 80px;
+  }
+  .navbar .icon-bar {
+    color: #fff;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: #eee;
+    letter-spacing: .5px;
+    margin: 15px 5px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  
+  /* NavBar Style Ends */
+
+
 .sectionAboutMediaLeft, .sectionAboutMediaRight {
     width: 100%;
     align-items: center;
