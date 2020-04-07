@@ -241,7 +241,6 @@ input[type=submit]:hover {
 .sliderContentText {
     text-align: right;
     color: white;
-    display: visible;
     font-size: 12px;
     width: 25%;
 }
