@@ -6,6 +6,23 @@
 
 /* NavBar Style  */
 
+.headerContainer {
+    display: flex;
+}
+
+.siteLogo {
+    width: 30%;
+}
+
+.navbar-collapse {
+    text-align: center;
+    width: 40%;
+}
+
+.accountSectionHeader {
+    width: 30%;
+}
+
 .header {
     display: flex !important;
     margin-left: auto;
@@ -98,7 +115,7 @@ li a:hover {
 
 /* Contact Page Style Starts  */
 
-.contactSection {
+.contactSection, .historySection {
     padding: 10%;
 }
 
@@ -155,6 +172,16 @@ input[type=submit]:hover {
 }
 
 /* Contact Page Style Ends  */
+
+/* History Page Style Starts   */
+
+.firstRowHistorySection {
+    display: flex;
+}
+
+
+
+/* History Page Style Ends   */
 
  /* home page slider starts */
 
