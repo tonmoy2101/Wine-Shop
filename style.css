@@ -178,19 +178,23 @@ input[type=submit]:hover {
 
 /* History Page Style Starts   */
 
-.firstRowHistorySection {
+.firstRowHistorySection, .secondRowHistorySection, .thirdRowHistorySection, .forthRowHistorySection {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
 }
 
-.firstRowHistorySectionImageDiv {
-    width: 45%;
-    border-right: 2px solid #7E2D53;
+.firstRowHistorySectionImageDiv, .secondRowHistorySectionImageDiv, .thirdRowHistorySectionImageDiv, .forthRowHistorySectionImageDiv {
+    margin: auto;
+    width: 40%;
+    /* border-right: 2px solid #7E2D53; */
+}
+.secondRowHistorySectionImageDiv, .forthRowHistorySectionImageDiv {
+    text-align: right;
 }
 
-.firstRowHistorySectionContentDiv {
-    width: 55%;
+.firstRowHistorySectionContentDiv, .secondRowHistorySectionContentDiv, .thirdRowHistorySectionContentDiv, .forthRowHistorySectionContentDiv {
+    margin: auto;
+    width: 60%;
     /* border-left: 2px solid #7E2D53; */
 }
 
@@ -203,14 +207,16 @@ input[type=submit]:hover {
     padding: 3%;
 }
 
-/* .secondRowHistorySectionImageDiv {
-    width: 45%;
+.containerVerticalLineHistorySection {
+    width: 2%;
+    /* text-align: center; */
 }
 
-.firstRowHistorySectionContentDiv {
-    width: 55%;
-    border-right: 2px solid #7E2D53;
-} */
+.verticalLineHistorySection {
+    width: 1px;
+    height: 100%;
+    background-color: #7E2D53;
+}
 
 /* History Page Style Ends   */
 
