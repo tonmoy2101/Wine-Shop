@@ -69,6 +69,7 @@ li a:hover {
 
   /* NavBar Style Ends */
 
+ /* About Page Style Starts  */
 
 .sectionAboutMediaLeft, .sectionAboutMediaRight {
     width: 100%;
@@ -112,6 +113,8 @@ li a:hover {
 .testimonialImagePerson {
     border-radius: 50%;
 }
+
+ /* About Page Style Ends  */
 
 /* Contact Page Style Starts  */
 
@@ -177,9 +180,37 @@ input[type=submit]:hover {
 
 .firstRowHistorySection {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.firstRowHistorySectionImageDiv {
+    width: 45%;
+    border-right: 2px solid #7E2D53;
+}
 
+.firstRowHistorySectionContentDiv {
+    width: 55%;
+    /* border-left: 2px solid #7E2D53; */
+}
+
+.boxedParagraphHistorySection {
+    background-color: #E7E7E7;
+    padding: 3%;
+}
+
+.headingHistorySection {
+    padding: 3%;
+}
+
+/* .secondRowHistorySectionImageDiv {
+    width: 45%;
+}
+
+.firstRowHistorySectionContentDiv {
+    width: 55%;
+    border-right: 2px solid #7E2D53;
+} */
 
 /* History Page Style Ends   */
 
