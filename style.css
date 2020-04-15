@@ -118,7 +118,7 @@ li a:hover {
 
 /* Contact Page Style Starts  */
 
-.contactSection, .historySection, .aboutSection {
+.contactSection, .historySection, .aboutSection, .shopSection {
     padding: 10%;
 }
 
@@ -219,6 +219,42 @@ input[type=submit]:hover {
 }
 
 /* History Page Style Ends   */
+
+
+
+/* Shop Page Style Starts  */
+
+.productColumn {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn_shop_Now_Product {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #7E2D53;
+    color: white;
+}
+
+.product {
+    border: 1px solid #7E2D53;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.productLabel a {
+    color: black;
+}
+
+.img-fluid {
+    width: 85px;
+    height: 350px;
+}
+
+/* Shop Page Style Ends  */
+
+
 
  /* home page slider starts */
 
