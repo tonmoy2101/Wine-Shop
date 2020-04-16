@@ -118,7 +118,7 @@ li a:hover {
 
 /* Contact Page Style Starts  */
 
-.contactSection, .historySection, .aboutSection, .shopSection {
+.contactSection, .historySection, .aboutSection, .shopSection, .singleShopPageFull {
     padding: 10%;
 }
 
@@ -258,6 +258,34 @@ input[type=submit]:hover {
 
 /* Shop Page Style Ends  */
 
+
+/* Shop Page Single Style Starts  */
+
+.singleProductSection {
+    display: flex;
+}
+
+.onlyProductPart {
+    width: 100%;
+}
+
+.onlyPrtPart {
+    width: 70%;
+}
+
+.singleShopPageCategorySection {
+    width: 30%;
+}
+
+.productShortDetailsRow {
+    display: flex;
+}
+
+.productGalleryOne, .productGalleryTwo, .productGalleryThree, .productGalleryFour {
+    height: 25%;
+}
+
+/* Shop Page Single Style Ends */
 
 
  /* home page slider starts */
