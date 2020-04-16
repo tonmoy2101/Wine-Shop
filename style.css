@@ -252,6 +252,10 @@ input[type=submit]:hover {
     height: 350px;
 }
 
+.productCategory a{
+    color: black;
+}
+
 /* Shop Page Style Ends  */
 
 
