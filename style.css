@@ -2986,64 +2986,6 @@ h3.widget-title-modal {
 /*-------------------------
   Slider Styles
 -------------------------*/
-/* #slider figure .sliderImages {
-  text-align: center;
-  height: 500px;
-  top: 40%;
-  width: 20%;
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-} */
-/* #slider figure .sliderImages img {
-  height: 60%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 20s slideShow infinite;
-}
-.sliderImages {
-  width: 100%;
-  background-color: #7E2D53;
-}
-
-.bannerHeadings {
-  padding: 5%;
-  margin-top: -1%;
-  margin-left: 7%;
-  text-align: center;
-  color: white;
-}
-
-.sliderContent {
-  transform: translate(65%, 80%);
-}
-
-.sliderContentText {
-  text-align: right;
-  color: white;
-  font-size: 12px;
-  width: 25%;
-}
-
-.shopNowBTNHomeSliderBanner {
-  padding: 3% 10%;
-  font-weight: 600;
-  color: #7E2D53;
-  border: none;
-  background-color: white;
-} */
 
 .slide.align__center--left {
   align-items: center;
@@ -5756,16 +5698,7 @@ a.checkout__title {
   position: relative;
   /* text-transform: uppercase; */
 }
-/* .productMainImageSection {
-  width: 565px;
-  height: 452px;
-}
-.rjghstrgeuhrth {
-  display: flex;
-}
-.productGalleryOne, .productGalleryTwo, .productGalleryThree, .productGalleryFour {
-  height: 113px;
-} */
+
 .related__products__block__display__flex {
   display: flex;
   width: 100%;
@@ -6262,6 +6195,38 @@ section.wn_contact_area {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   overflow-x: hidden; 
 }
+
+
+.content__div__first, .content__div__forth {
+  position: absolute;
+}
+.content__div__second, .content__div__third {
+  position: relative;
+}
+.content__div__second .background__div__image__div {
+  width: 330px;
+  height: 320px;
+}
+.content__div__third .background__div__image__div {
+  width: 330px;
+  height: 320px;
+}
+.content__div__first .content__container__text  .tranform__div__text {
+  transform: translateX(120%);
+}
+.content__div__second .background__div__image__div {
+  transform: translate(40%, 80%);
+}
+.content__div__third .background__div__image__div {
+  transform: translate(5%, -95%);
+}
+.content__container__text {
+  background-color: rgba(126, 45, 83, 0.1);
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+
 .wrapper-boxed-layout .header-menu {
     width: calc(100% - 200px);
     left: 100px; 
