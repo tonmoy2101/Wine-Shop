@@ -41,8 +41,7 @@ html,
 button,
 input,
 select,
-textarea {
-  font-family: "Source Sans Pro", Helvetica, sans-serif; }
+
 
 body {
   color: #141412;
@@ -74,7 +73,6 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: Bitter, Georgia, serif;
   line-height: 1.3; }
 
 h1 {
@@ -126,7 +124,6 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
   font-size: 14px;
   -webkit-hyphens: none;
   -ms-hyphens: none;
@@ -135,7 +132,6 @@ samp {
 pre {
   background: #f5f5f5;
   color: #666;
-  font-family: monospace;
   font-size: 14px;
   margin: 20px 0;
   overflow: auto;
@@ -355,7 +351,6 @@ body {
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Poppins", sans-serif;
   color: #333;
   font-weight: 400; }
 
@@ -377,7 +372,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, address, p, pre, blockquot
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Poppins", sans-serif;
+  
   line-height: 1.35; }
 
 h1,
@@ -781,13 +776,6 @@ a {
 .text--normal {
   font-style: normal; }
 
-
-/* Font specialized */
-.body--font {
-  font-family: "Poppins", sans-serif; }
-.heading--font {
-  font-family: "Poppins", sans-serif; }
-
 /* Height and width */
 .fullscreen {
   min-height: 85vh;
@@ -984,6 +972,9 @@ Elements Styles
   margin-bottom: 20px;
   position: relative;
   text-transform: uppercase;
+}
+.wn__newsletter__area {
+  text-align: center;
 }
 .wn__newsletter__area .section__title > h2 {
   letter-spacing: 2px;
@@ -1266,7 +1257,6 @@ Elements Styles
       color: #e59285; }
     .block-bg .close__wrap::after {
       content: "\f136";
-      font-family: Material-Design-Iconic-Font;
       font-size: 24px;
       position: absolute;
       right: 0;
@@ -1388,7 +1378,6 @@ Elements Styles
   position: relative; }
 .box-menu-content .ppnav .ppmainmenu li.drop .ppmegamenu .item > li.label2 > a::after {
   content: "\f2fb";
-  font-family: Material-Design-Iconic-Font;
   font-size: 15px;
   position: absolute;
   right: 0; }
@@ -1499,7 +1488,6 @@ Elements Styles
       color: #e59285; }
     .minicart-content-wrapper .micart__close::after {
       content: "\f136";
-      font-family: Material-Design-Iconic-Font;
       font-size: 24px;
       position: absolute;
       right: 0;
@@ -1754,7 +1742,6 @@ Header Styles
     padding-right: 40px; }
     .header__area .menubar a.open_sidebar::after {
       content: "\f197";
-      font-family: "Material-Design-Iconic-Font";
       font-size: 26px;
       position: absolute;
       right: 0;
@@ -2019,7 +2006,6 @@ Header Styles
   position: relative; }
 .mainmenu__nav .meninmenu ul li.label2 > a::after {
   content: "\f2fb";
-  font-family: Material-Design-Iconic-Font;
   font-size: 15px;
   position: absolute;
   right: 0; }
@@ -2446,7 +2432,6 @@ nav.menu {
       background: #fff;
       box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.07);
       display: inline-block;
-      font-family: "Lato",sans-serif;
       height: 35px;
       line-height: 35px;
       padding: 0 15px;
@@ -2633,7 +2618,6 @@ nav.menu {
   color: #333;
   cursor: pointer;
   display: inline-block;
-  font-family: "Roboto",sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -2727,7 +2711,6 @@ nav.menu {
   max-width: 50%;
   padding-right: 50px; }
 .product-info h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 22px;
   margin-bottom: 10px;
   text-transform: capitalize; }
@@ -2760,7 +2743,7 @@ nav.menu {
   display: flex;
   font-size: 16px;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif; }
+   }
 .product-info .select__color .color__list {
   align-items: center;
   display: flex;
@@ -2790,7 +2773,7 @@ nav.menu {
 	font-weight:600;
     font-size: 16px;
     text-transform: capitalize;
-    font-family: "Poppins", sans-serif; }
+ }
   .product-info .select__size .color__list {
     display: flex; }
     .product-info .select__size .color__list li {
@@ -2815,7 +2798,6 @@ h3.widget-title-modal {
   font-weight: 600;
   font-size: 16px;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
   padding-right: 14px; }
 .addtocart-btn {
   margin-top: 66px;
@@ -2910,15 +2892,18 @@ h3.widget-title-modal {
   margin-top: 20px;
 }
 .newsletter__block p {
-  color: #333;
+  color: #fff;
   font-size: 14px;
   line-height: 25px;
   padding: 0 60px 60px;
 }
+.wn__newsletter__area .section__title h2 {
+  color: #fff;
+}
 .newsletter__block .newsletter__box {
   display: inline-block;
   margin-top: 5px;
-  max-width: 470px;
+  /* max-width: 470px; */
   position: relative;
   width: 100%;
 }
@@ -2928,11 +2913,11 @@ h3.widget-title-modal {
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
   background: transparent none repeat scroll 0 0;
-  border-color: currentcolor currentcolor #aaa;
+  border-color: #aaa;
   border-image: none;
   border-radius: 0;
-  border-style: none none solid;
-  border-width: 0 0 1px;
+  border-style: solid;
+  border-width: 1px;
   color: #333;
   display: inline-block;
   font-size: 12px;
@@ -2943,26 +2928,25 @@ h3.widget-title-modal {
   width: 100%;
 }
    .newsletter__block .newsletter__box button {
-  background: transparent none repeat scroll 0 0;
+  background-color: #fff;
   border: medium none;
+  text-align: center;
   color: #333;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 14px;
   font-weight: 700;
   height: 50px;
   letter-spacing: 0.025em;
   line-height: 36px;
-  padding: 0 15px 0 35px;
-  position: absolute;
+  padding: 0 30px 0 30px;
+  /* position: absolute; */
   right: 0;
   text-align: center;
   text-transform: uppercase;
   top: 0;
-  font-family: Poppins;
   transition: all 300ms ease-in 0s;
 }
-      .newsletter__block .newsletter__box button:hover {
-        color: #e59285; }
+      
 .newsletter__yellow .newsletter__block .newsletter__box button {
   background: #2e2e2e none repeat scroll 0 0;
   border: 1px solid #2e2e2e; }
@@ -3002,18 +2986,18 @@ h3.widget-title-modal {
 /*-------------------------
   Slider Styles
 -------------------------*/
-#slider figure .sliderImages {
+/* #slider figure .sliderImages {
   text-align: center;
   height: 500px;
   top: 40%;
   width: 20%;
   float: left;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   position: relative;
-}
-#slider figure .sliderImages img {
+} */
+/* #slider figure .sliderImages img {
   height: 60%;
   position: absolute;
   top: 50%;
@@ -3059,21 +3043,52 @@ h3.widget-title-modal {
   color: #7E2D53;
   border: none;
   background-color: white;
-}
+} */
 
 .slide.align__center--left {
   align-items: center;
   display: flex; }
 .slider__content {
   margin-top: 60px;
+  overflow: visible;
+  transform: translate(75%, -110%);
 }
-.contentbox > h3 {
-  color: #ce7852;
-  font-size: 40px;
+.slider__image h2 {
+  color: #fff;
+}
+.contentbox > h6 {
+  color: #fff;
   margin-bottom: 10px;
 }
 .contentbox {
   text-align: right;
+  width: 25%;
+}
+.shop__now__btn__second {
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #7E2D53;
+  text-align: center;
+  width: max-content;
+  border: none;
+  background-color: white;
+}
+ .shop__now__btn__sliderBanner {
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #7E2D53;
+  text-align: center;
+  border: none;
+  background-color: white;
+}
+.image__division__slider {
+  text-align: center;
+  display: inline-block;
+}
+.image__division__slider .slider__image__div .slider__image {
+  width: 320px;
+  height: 370px;
+  display: inline-block;
 }
 .slider--15 .slide .slider__content h2.another {
   font-size: 60px;
@@ -3081,7 +3096,6 @@ h3.widget-title-modal {
 .slide .slider__content h2 {
   color: #3c3c3c;
   font-size: 68px;
-  font-family: poppins;
   font-weight: 700;
   line-height: 1.2; }
 .slide .slider__content h1 {
@@ -3117,13 +3131,10 @@ h3.widget-title-modal {
     margin-left: 25px;
     vertical-align: middle;
     width: 44px; }
-  .slide .slider__content a.shopbtn:hover {
-    color: #e59285; }
-    .slider--15 .slide .slider__content h2 span {
-      color: #ce7852; }
+  
+    
   .slider--15 .slide .slider__content h1 {
     color: #3c3c3c;
-    font-family: "tex_gyre_adventorbold";
     font-size: 80px;
     line-height: 1;
     margin-bottom: 50px; }
@@ -3136,8 +3147,7 @@ h3.widget-title-modal {
 	}
     .slider--15 .slide .slider__content a:hover::after {
       background-position: 0 0; }
-    .slider--15 .slide .slider__content a:hover {
-      color: #ce7852; }
+    
 .slide__arrow01 {
   position: relative; }
   .slide__arrow01 .owl-nav div {
@@ -3185,7 +3195,34 @@ h3.widget-title-modal {
     margin: 0 30px;
     width: auto;
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+    
+    .slider__image h2 {
+      color: #fff;
+    }
+    .image__division__slider .slider__image__div .slider__image {
+      width: 320px;
+      height: 370px;
+      display: inline-block;
+    }
+   .shop__now__btn__sliderBanner {
+      padding: 7px 10px;
+      text-align: center;
+      font-weight: 600;
+      color: #7E2D53;
+      border: none;
+      background-color: white;
+    }
+    .slider__content {
+      margin-top: 60px;
+      overflow: visible;
+      transform: translate(60%, -100%);
+    }
+    .contentbox {
+      text-align: right;
+      width: 35%;
+    }
+  }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider__fixed--height {
     padding: 150px 0 !important;
@@ -3195,6 +3232,15 @@ h3.widget-title-modal {
     padding: 150px 0 !important; }
   .page-slider {
     padding-right: 0; }
+    .contentbox {
+      text-align: right;
+      width: 40%;
+    }
+    .slider__content {
+      margin-top: 60px;
+      overflow: visible;
+      transform: translate(60%, -100%);
+    }
   .slider--six .slide .slider__content.slidebox .contentbox {
     margin: 0;
     padding: 0; }
@@ -3220,6 +3266,20 @@ h3.widget-title-modal {
   .slider__fixed--height {
     height: auto !important;
     padding: 100px 0 !important; }
+    .contentbox {
+      text-align: center;
+      width: 55%;
+      transform: translateX(50%);
+    }
+    .slider__content {
+      margin-top: 60px;
+      overflow: visible;
+      transform: translateY(-10%);
+    }
+    .slider__content .contentbox h2 {
+      text-align: center;
+      display: inline-block;
+    }
 .arrows_style .owl-nav div.owl-prev {
   left: 0;
 }
@@ -3310,10 +3370,20 @@ h3.widget-title-modal {
   font-size: 50px;
 }
  }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 675px) {
 .slider--15 .slide .slider__content h2 {
   font-size: 40px;
   line-height: 50px;
+}
+/* .contentbox {
+  text-align: right;
+} */
+ .shop__now__btn__sliderBanner {
+  padding: 3px 5px;
+  font-weight: 600;
+  color: #7E2D53;
+  border: none;
+  background-color: white;
 }
 .slider--15 .slide .slider__content h2.another {
   font-size: 46px;
@@ -3385,8 +3455,7 @@ h3.widget-title-modal {
 .color--pink .shopbtn:hover::after {
   background-position: 100% 50%;
   transition: all 300ms ease-in 0s; }
-.color--pink .shopbtn:hover {
-  color: #da7187; }
+
 .wn__blog__area .title {
   margin-bottom: 17px; }
   .wn__blog__area .title h2 {
@@ -3606,13 +3675,11 @@ h3.widget-title-modal {
 	  padding: 40px 40px 25px;
 	  position: relative;
 	  text-align: left;
-	  transition: background 0.7s ease 0s;
 	  width: 100%;
 	}
     .post__itam .content h3 {
 	  color: #333;
 	  display: block;
-	  font-family: "Open Sans",sans-serif;
 	  font-size: 20px;
 	  font-weight: 600;
 	  line-height: 32px;
@@ -3695,7 +3762,6 @@ h3.widget-title-modal {
   padding: 50px 15%; }
 .video__area .content h3 {
   color: #2e2e2e;
-  font-family: "Satisfy",cursive;
   font-size: 24px;
   font-weight: normal;
   line-height: 35px; }
@@ -4589,6 +4655,26 @@ h3.widget-title-modal {
 /*--------------------------
   About Styles
 ----------------------------*/
+
+.page-about .sectionAboutMediaLeftImage  {
+  width: 420px;
+  height: 600px;
+}
+.sectionAboutTestimonial {
+  border: 1px #7E2D53 solid;
+}
+.aboutFullTestimonial {
+  text-align: center;
+}
+.aboutFullTestimonial {
+  text-align: center;
+}
+.testimonialImagePerson {
+  border-radius: 50%;
+}
+.sectionAboutTestimonial h4, .sectionAboutTestimonial p {
+  color: #7E2D53;
+}
 .about_area .thumb {
   margin-left: -15px;
   margin-right: -15px; }
@@ -4752,6 +4838,53 @@ h3.widget-title-modal {
 /*--------------------------
   Contact Styles
 ----------------------------*/
+
+.iframeContactMap {
+  width: 100%;
+  height: 450px;
+  border:0;
+}
+
+/* Contact Form Design */
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #7E2D53;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #7E2D53;
+}
+
+.container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+}
+
+.contactFormMine {
+    margin: auto;
+}
+
+/* Contact Page Style Ends  */
+
+
 .contact__title {
   color: #2e2e2e;
   font-size: 22px;
@@ -4804,7 +4937,6 @@ h3.widget-title-modal {
   box-shadow: none;
   color: #333;
   display: inline-block;
-  font-family: Poppins,Arial,Helvetica,sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 34px;
@@ -5112,6 +5244,17 @@ h3.widget-title-modal {
   padding: 0 25px;
   text-transform: uppercase;
 }
+.addtocart__actions .about__more {
+  background: #7E2D53 none repeat scroll 0 0;
+  border: 0 none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 55px;
+  text-transform: uppercase;
+}
 .product-cart-selection .product-cart-selection--third .addtocart__actions .tocart {
   background: #7E2D53 none repeat scroll 0 0;
   border: 0 none;
@@ -5135,7 +5278,6 @@ h3.widget-title-modal {
   color: #7E2D53;
   border-radius: 5px;
   display: block;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 50px;
@@ -5157,7 +5299,6 @@ h3.widget-title-modal {
   padding: 0 40px; }
 .cart__total__list li {
   color: #333444;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   height: 60px;
   line-height: 60px; }
@@ -5323,7 +5464,6 @@ h3.widget-title-modal {
   .checkout_info::before {
     color: #e59285;
     content: "\f15b";
-    font-family: FontAwesome;
     font-size: 13px;
     left: 26px;
     position: absolute; }

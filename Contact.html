@@ -13,8 +13,6 @@
 
     <!-- Stylesheets -->
 
-    <title>Home</title>
-    <link rel="stylesheet" href="./style2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -49,13 +47,13 @@
                         <ul class="meninmenu d-flex justify-content-start">
                             <li class="drop with--one--item"><a href="index.html">Home</a>
                             </li>
-                            <li class="drop"><a href="#">History</a>
+                            <li class="drop"><a href="./history.html">History</a>
                             </li>
-                            <li class="drop"><a href="#">About</a>
+                            <li class="drop"><a href="./about.html">About</a>
                             </li>
-                            <li class="drop"><a href="#">Shop</a>
+                            <li class="drop"><a href="./Shop.html">Shop</a>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="drop"><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -75,15 +73,15 @@
                 <div class="col-lg-12 d-none">
                     <nav class="mobilemenu__nav">
                         <ul class="meninmenu">
-                            <li><a href="#">Home</a>
+                            <li><a href="./index.html">Home</a>
                             </li>
-                            <li><a href="#">History</a>
+                            <li><a href="./history.html">History</a>
                             </li>
-                            <li><a href="#">About</a>
+                            <li><a href="./about.html">About</a>
                             </li>
-                            <li><a href="#">Shop</a>
+                            <li><a href="./Shop.html">Shop</a>
                             </li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./Contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -94,51 +92,56 @@
             <!-- Mobile Menu -->
         </div>
     </header>
-
-
-    <section class="contactSection">
-        <h1>Contact</h1>
-        <iframe class="iframeContactMap"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.692856865229!2d90.4164018142985!3d23.829518591667703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71fc78a0745%3A0xdfe29db44d7311c5!2sElegance%20IT%20Bangladesh!5e0!3m2!1sen!2sbd!4v1585822921921!5m2!1sen!2sbd"
-            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="vertical4ColumnRowContact">
-            <div class="column1">
-                <img src="./img/Photo/Group305.png" alt="">
-                <h4>Skype</h4>
-                <p>contact.skype</p>
+    <div class="page-about about_area bg--white section-padding--lg mt--120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <iframe class="iframeContactMap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.692856865229!2d90.4164018142985!3d23.829518591667703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71fc78a0745%3A0xdfe29db44d7311c5!2sElegance%20IT%20Bangladesh!5e0!3m2!1sen!2sbd!4v1585822921921!5m2!1sen!2sbd"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
-            <div class="column2">
-                <img src="./img/Photo/Group303.png" alt="">
-                <h4>Phone</h4>
-                <p>+0128591121001</p>
+            <div class="row mt--40">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="./img/Photo/Group305.png" alt="">
+                    <h4>Skype</h4>
+                    <p>contact.skype</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="./img/Photo/Group303.png" alt="">
+                    <h4>Phone</h4>
+                    <p>+0128591121001</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="./img/Photo/Group301.png" alt="">
+                    <h4>Email</h4>
+                    <p>contact.email@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="./img/Photo/Group299.png" alt="">
+                    <h4>Location</h4>
+                    <p>12 Street Turning Place South East Antar</p>
+                </div>
             </div>
-            <div class="column3">
-                <img src="./img/Photo/Group301.png" alt="">
-                <h4>Email</h4>
-                <p>contact.email@gmail.com</p>
-            </div>
-            <div class="column4">
-                <img src="./img/Photo/Group299.png" alt="">
-                <h4>Location</h4>
-                <p>12 Street Turning Place South East Antar</p>
+            <div class="row mt--40">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="contactFormMine">
+                        <div class="container">
+                            <form action="/action_page.php">
+                                <input type="text" id="fname" name="firstname" placeholder="First name">
+                                <input type="text" id="lname" name="lastname" placeholder="Last name">
+                                <input type="text" id="mobileNumber" name="mobile number" placeholder="Mobile Number">
+                                <input type="text" id="email" name="email" placeholder="Your Email">
+                                <textarea id="subjectMessage" name="subject" placeholder="Message"
+                                    style="height:200px"></textarea>
+                                <input type="submit" value="Send Message">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div class="contactFormMine">
-            <div class="container">
-                <form action="/action_page.php">
-                    <input type="text" id="fname" name="firstname" placeholder="First name">
-                    <input type="text" id="lname" name="lastname" placeholder="Last name">
-                    <input type="text" id="mobileNumber" name="mobile number" placeholder="Mobile Number">
-                    <input type="text" id="email" name="email" placeholder="Your Email">
-                    <textarea id="subjectMessage" name="subject" placeholder="Message" style="height:200px"></textarea>
-                    <input type="submit" value="Send Message">
-                </form>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer Area -->
     <footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
@@ -154,10 +157,10 @@
                                 <div class="footer__content">
                                     <ul class="mainmenu d-flex justify-content-center">
                                         <li><a href="index.html">Home</a></li>
-                                        <li><a href="index.html">History</a></li>
-                                        <li><a href="index.html">Shop</a></li>
-                                        <li><a href="index.html">About</a></li>
-                                        <li><a href="index.html">Contact</a></li>
+                                        <li><a href="history.html">History</a></li>
+                                        <li><a href="Shop.html">Shop</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="Contact.html">Contact</a></li>
                                     </ul>
                                     <div class="footer__content__header">
                                         <h5>Follow Us</h5>
@@ -183,7 +186,7 @@
         </div>
     </footer>
     <!-- //Footer Area -->
-    </div>
+
     <!-- //Main wrapper -->
     <!-- JS Files -->
     <script src="js/vendor/jquery-3.2.1.min.js"></script>

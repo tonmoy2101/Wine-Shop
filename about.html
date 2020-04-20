@@ -9,16 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
-
     <!-- Stylesheets -->
-
-    <title>Home</title>
-    <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/plugins.css">
     <link rel="stylesheet" href="style.css">
@@ -31,175 +22,216 @@
 </head>
 
 <body>
+    <!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
 
-    <!-- Header -->
-    <header id="wn__header" class="oth-page header__area header__absolute sticky__header"
-        style="background-color: #7E2D53;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-7 col-lg-2">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo/logo.png" alt="logo images">
-                        </a>
+    <!-- Main wrapper -->
+    <div class="wrapper" id="wrapper">
+        <!-- Header -->
+        <header id="wn__header" class="oth-page header__area header__absolute sticky__header"
+            style="background-color: #7E2D53;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-7 col-lg-2">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo/logo.png" alt="logo images">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <nav class="mainmenu__nav">
+                            <ul class="meninmenu d-flex justify-content-start">
+                                <li class="drop with--one--item"><a href="index.html">Home</a>
+                                </li>
+                                <li class="drop"><a href="history.html">History</a>
+                                </li>
+                                <li class="drop"><a href="about.html">About</a>
+                                </li>
+                                <li class="drop"><a href="Shop.html">Shop</a>
+                                </li>
+                                <li class="drop"><a href="Contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-5 col-lg-2">
+                        <ul class="header__sidebar__right d-flex justify-content-end align-items-center">
+                            <li class="shop_search"><a class="search__active" href="#"></a></li>
+                            <li class="accountMyText"><a href="#">MyAccount</a></li>
+                            <li class="setting__bar__icon"><a class="setting__active" href="#"></a>
+                            </li>
+                            <li class="shopcart"><a class="cartbox_active" href="#"><span
+                                        class="product_qun">3</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-8 d-none d-lg-block">
-                    <nav class="mainmenu__nav">
-                        <ul class="meninmenu d-flex justify-content-start">
-                            <li class="drop with--one--item"><a href="index.html">Home</a>
-                            </li>
-                            <li class="drop"><a href="#">History</a>
-                            </li>
-                            <li class="drop"><a href="#">About</a>
-                            </li>
-                            <li class="drop"><a href="./Shop.html">Shop</a>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+                <!-- Start Mobile Menu -->
+                <div class="row d-none">
+                    <div class="col-lg-12 d-none">
+                        <nav class="mobilemenu__nav">
+                            <ul class="meninmenu">
+                                <li><a href="./index.html">Home</a>
+                                </li>
+                                <li><a href="./history.html">History</a>
+                                </li>
+                                <li><a href="./about.html">About</a>
+                                </li>
+                                <li><a href="./Shop.html">Shop</a>
+                                </li>
+                                <li><a href="./Contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="col-md-8 col-sm-8 col-5 col-lg-2">
-                    <ul class="header__sidebar__right d-flex justify-content-end align-items-center">
-                        <li class="shop_search"><a class="search__active" href="#"></a></li>
-                        <li class="accountMyText"><a href="#">MyAccount</a></li>
-                        <li class="setting__bar__icon"><a class="setting__active" href="#"></a>
-                        </li>
-                        <li class="shopcart"><a class="cartbox_active" href="#"><span class="product_qun">3</span></a>
-                        </li>
-                    </ul>
+                <!-- End Mobile Menu -->
+                <div class="mobile-menu d-block d-lg-none">
                 </div>
+                <!-- Mobile Menu -->
             </div>
-            <!-- Start Mobile Menu -->
-            <div class="row d-none">
-                <div class="col-lg-12 d-none">
-                    <nav class="mobilemenu__nav">
-                        <ul class="meninmenu">
-                            <li><a href="#">Home</a>
-                            </li>
-                            <li><a href="#">History</a>
-                            </li>
-                            <li><a href="#">About</a>
-                            </li>
-                            <li><a href="#">Shop</a>
-                            </li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
+        </header>
+
+        <!-- Start About Area -->
+        <div class="page-about about_area bg--white section-padding--lg mt--120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="sectionAboutMediaLeftImage">
+                            <img src="./img/Photo/Group323.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-2 col-md-2"></div> -->
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="sectionAboutMediaLeftContent">
+                            <h2>Lorem Ipsum</h2>
+                            <p class="mt--20">It is a long established fact that a reader will be distracted by the readable content of
+                                a
+                                page
+                                when
+                                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                                normal
+                                distribution of letters, as opposed to using 'Content here, content here', making it
+                                look
+                                like
+                                readable English. Many desktop publishing packages and web page editors now use Lorem
+                                Ipsum
+                                as
+                                their
+                                default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                                their
+                                infancy. Various versions have evolved over the years, sometimes by accident, sometimes
+                                on
+                                purpose
+                                (injected humour and the like).</p>
+                                <div class="addtocart__actions mt--20">
+                                    <button class="about__more" title="Add to Cart">More</button>
+                                </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row mt--120">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="sectionAboutMediaLeftContent">
+                            <h2>Lorem Ipsum</h2>
+                            <p class="mt--20">It is a long established fact that a reader will be distracted by the readable content of
+                                a
+                                page
+                                when
+                                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                                normal
+                                distribution of letters, as opposed to using 'Content here, content here', making it
+                                look
+                                like
+                                readable English. Many desktop publishing packages and web page editors now use Lorem
+                                Ipsum
+                                as
+                                their
+                                default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                                their
+                                infancy. Various versions have evolved over the years, sometimes by accident, sometimes
+                                on
+                                purpose
+                                (injected humour and the like).</p>
+                                <div class="addtocart__actions mt--20">
+                                    <button class="about__more" title="Add to Cart">More</button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="sectionAboutMediaLeftImage">
+                            <img src="./img/Photo/Group323.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <!-- End Mobile Menu -->
-            <div class="mobile-menu d-block d-lg-none">
-            </div>
-            <!-- Mobile Menu -->
         </div>
-    </header>
-    <!-- //Header -->
-
-    <section class="aboutSection">
-        <section class="sectionAboutMediaLeft">
-            <div class="sectionAboutMediaLeftFullDiv">
-                <div class="sectionAboutMediaLeftImage">
-                    <img src="./img/Photo/Group323.png" alt="">
-                </div>
-                <div class="aboutMediaLeftSectionseparator">
-                    <div class="aboutMediaLeftSectionseparatorMainSeparator"></div>
-                </div>
-                <div class="sectionAboutMediaLeftContent">
-                    <h2>Lorem Ipsum</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their
-                        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                        infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose
-                        (injected humour and the like).</p>
-                    <button class="sectionAboutMediaLeftContentBtnSeeMore">More</button>
-                </div>
-            </div>
-        </section>
-        <section class="sectionAboutMediaRight">
-            <div class="sectionAboutMediaRightFullDiv">
-                <div class="sectionAboutMediaRightContent">
-                    <h2>Lorem Ipsum</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their
-                        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                        infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose
-                        (injected humour and the like).</p>
-                    <button class="sectionAboutMediaRightContentBtnSeeMore">More</button>
-                </div>
-                <div class="sectionAboutMediaRightImage">
-                    <img src="./img/Photo/Group324.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="sectionAboutTestimonial">
-            <div class="aboutFullTestimonial">
-                <h2>TESTIMONIALS</h2>
-                <p>The standard Lorem Ipsum passage, used since the 1500s</p>
-                <div class="testimonialImage">
-                    <img class="testimonialImagePerson" height="120" width="120" src="./img/wendy.jpg" alt="">
-                </div>
-                <p><strong>H. Rackham</strong></p>
-            </div>
-        </section>
-    </section>
-
-    <!-- Footer Area -->
-    <footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
-        <div class="footer-static-top">
+        <!-- End About Area -->
+        <!-- Start Team Area -->
+        <section class="wn__team__area pb--75 bg--white">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="footer__widget footer__menu">
-                            <div class="ft__logo">
-                                <a href="index.html">
-                                    <img src="images/logo/logo.png" alt="logo">
-                                </a>
-                                <div class="footer__content">
-                                    <ul class="mainmenu d-flex justify-content-center">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="index.html">History</a></li>
-                                        <li><a href="index.html">Shop</a></li>
-                                        <li><a href="index.html">About</a></li>
-                                        <li><a href="index.html">Contact</a></li>
-                                    </ul>
-                                    <div class="footer__content__header">
-                                        <h5>Follow Us</h5>
-                                    </div>
-                                    <ul class="social__net social__net--2 d-flex justify-content-center">
-                                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                        <li><a href="#"><i class="bi bi-google"></i></a></li>
-                                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                                    </ul>
+                        <div class="sectionAboutTestimonial pt--30 pb--30">
+                            <div class="aboutFullTestimonial">
+                                <h4>Testimonials</h4>
+                                <p>The standard Lorem Ipsum passage, used since the 1500s</p>
+                                <div class="testimonialImage">
+                                    <img class="testimonialImagePerson" height="120" width="120" src="./img/wendy.jpg" alt="">
                                 </div>
-                                <div class="footer__content__header">
-                                    <h5>Lorem Ipsum</h5>
-                                </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley.</p>
+                                <p><strong>H. Rackham</strong></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- //Footer Area -->
-    <!-- QUICKVIEW PRODUCT -->
-
-    <!-- END QUICKVIEW PRODUCT -->
+        </section>
+        <!-- End Team Area -->
+        <!-- Footer Area -->
+        <footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
+            <div class="footer-static-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer__widget footer__menu">
+                                <div class="ft__logo">
+                                    <a href="index.html">
+                                        <img src="images/logo/logo.png" alt="logo">
+                                    </a>
+                                    <div class="footer__content">
+                                        <ul class="mainmenu d-flex justify-content-center">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="history.html">History</a></li>
+                                            <li><a href="Shop.html">Shop</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="Contact.html">Contact</a></li>
+                                        </ul>
+                                        <div class="footer__content__header">
+                                            <h5>Follow Us</h5>
+                                        </div>
+                                        <ul class="social__net social__net--2 d-flex justify-content-center">
+                                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                            <li><a href="#"><i class="bi bi-google"></i></a></li>
+                                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer__content__header">
+                                        <h5>Lorem Ipsum</h5>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //Footer Area -->
 
     </div>
     <!-- //Main wrapper -->
@@ -212,8 +244,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/active.js"></script>
-
-
 
 </body>
 
