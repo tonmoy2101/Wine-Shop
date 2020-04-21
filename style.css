@@ -3451,6 +3451,30 @@ h3.widget-title-modal {
 /* .contentbox {
   text-align: right;
 } */
+.page-about .border__right {
+  border-right: none !important;
+} 
+.page-about .border__left {
+  border-left: none !important;
+}
+.page-about .firstRowHistorySectionContentDiv {
+  top: 0%;
+  transform: translateY(-50%);
+  /* position: relative; */
+}
+.page-about .firstRowHistorySectionContentDiv .firstRowHistorySectionImageDiv img{
+  /* float: right;
+  position: relative; */
+  margin-left: 0%;
+}
+.firstRowHistorySectionImageDiv {
+  margin-top: 25px;
+}
+
+.firstRowHistorySectionContentDiv .boxedParagraphHistorySection {
+  background-color: rgba(126, 45, 83, 0.2);
+  padding: 3%;
+}
  .shop__now__btn__sliderBanner {
   padding: 3px 5px;
   font-weight: 600;
@@ -6389,13 +6413,18 @@ section.wn_contact_area {
   border-left: 1px solid #7E2D53;
 }
 .page-about .firstRowHistorySectionContentDiv {
-  top: 54%;
+  top: 50%;
   position: relative;
 }
 .page-about .firstRowHistorySectionContentDiv .firstRowHistorySectionImageDiv img{
   /* float: right;
   position: relative; */
   margin-left: 30%;
+}
+
+.firstRowHistorySectionContentDiv .boxedParagraphHistorySection {
+  background-color: rgba(126, 45, 83, 0.2);
+  padding: 3%;
 }
 
 
