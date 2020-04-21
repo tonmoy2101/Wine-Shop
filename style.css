@@ -561,6 +561,12 @@ a {
   margin-bottom: -30px; }
 
 /* Background Image */
+.news__area {
+  background-image: url(images/04/news.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .bg-image--1 {
   background-image: url(images/bg/1.jpg);
   background-repeat: no-repeat;
@@ -976,6 +982,10 @@ Elements Styles
   position: relative;
   text-transform: uppercase;
 }
+
+.show--me {
+  display: none;
+}
 .homepage__wrapper .maincontent .container .row .absolute__first__col, .maincontent .container .row .absolute__second__col {
   position: absolute;
   transform: translateY(-90%);
@@ -1038,6 +1048,94 @@ Elements Styles
   font-size: 12px;
   font-weight: 300;
 }
+@media only screen and (min-width: 992px) and (max-width: 1150px) {
+  .show--me {
+    display: none;
+  }
+  .homepage__wrapper .maincontent .container .row .absolute__first__col {
+    position: absolute;
+    transform: translateY(-90%);
+    height: 175px;
+    width: 450px;
+  }
+  .maincontent .container .row .absolute__second__col {
+    position: absolute;
+    transform: translateY(-90%);
+    height: 175px;
+    width: 450px;
+  }
+  .homepage__wrapper .maincontent .container .row .relative__first__col{
+    position: relative;
+    padding: 35% 4% 6% 4%;
+    width: 65%;
+    display: inline-block;
+    border: 1px solid black;
+    transform: translate(35%, -65%);
+  }
+  .homepage__wrapper .maincontent .container .row .relative__second__col {
+    position: relative;
+    padding: 35% 4% 6% 4%;
+    width: 65%;
+    display: inline-block;
+    border: 1px solid black;
+    transform: translate(15%, -65%);
+  }
+  .homepage__wrapper .maincontent .container .row .relative__first__col .shop__now__btn__second,
+  .homepage__wrapper .maincontent .container .row .relative__second__col .shop__now__btn__second {
+    background-color: #7E2D53;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+  }
+  .homepage__wrapper .maincontent .container .row .relative__first__col .shop__now__btn__second a,
+  .homepage__wrapper .maincontent .container .row .relative__second__col .shop__now__btn__second a {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .hide--me {
+    display: none;
+  }
+  .show--me {
+    display: initial;
+  }
+  .homepage__wrapper .maincontent .container .row .absolute__first__col, .maincontent .container .row .absolute__second__col {
+    position: absolute;
+    transform: translateY(30%);
+    height: 175px;
+    width: 100%;
+  }
+  .homepage__wrapper .maincontent .container .row .relative__first__col{
+    position: relative;
+    padding: 5% 4% 6% 4%;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid black;
+    transform: translate(0%, 20%);
+  }
+  .homepage__wrapper .maincontent .container .row .relative__second__col {
+    position: relative;
+    padding: 5% 4% 6% 4%;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid black;
+    transform: translate(0%, 20%);
+  }
+  .homepage__wrapper .maincontent .container .row .relative__first__col .shop__now__btn__second,
+  .homepage__wrapper .maincontent .container .row .relative__second__col .shop__now__btn__second {
+    background-color: #7E2D53;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+  }
+  .homepage__wrapper .maincontent .container .row .relative__first__col .shop__now__btn__second a,
+  .homepage__wrapper .maincontent .container .row .relative__second__col .shop__now__btn__second a {
+    color: #fff;
+  }
+}
+
 
 @media only screen and (max-width: 420px) {
 .section__title h2 {
@@ -4631,18 +4729,7 @@ h3.widget-title-modal {
   About Styles
 ----------------------------*/
 
-.page-about .container .row .border__left {
-  border-left: 1px solid #7E2D53;
-  
-}
-.page-about .container .row .border__left .firstRowHistorySectionContentDiv {
-  background-color: rgba(126, 45, 83, 0.1);
-  /* padding: 3%; */
-}
-.page-about .container .row .border__right {
-  border-right: 1px solid #7E2D53;
-  /* padding: 3%; */
-}
+
 
 .page-about .sectionAboutMediaLeftImage  {
   width: 420px;
@@ -5257,10 +5344,17 @@ input[type=submit]:hover {
 }
 .shot__by__select {
   border: 1px solid #7E2D53;
-  width: 70%;
+  width: 80%;
   color: #7E2D53;
   height: 30px;
   padding: 0 10px; }
+  .product-cart-selection--second .shot__by__select, .product-cart-selection--third .shot__by__select {
+    border: 1px solid #7E2D53;
+  width: 70%;
+  color: #7E2D53;
+  height: 30px;
+  padding: 0 10px;
+  }
 .cart__btn__list li a, .cart__btn__list li span {
   background: #fff none repeat scroll 0 0;
   color: #7E2D53;
@@ -5268,8 +5362,8 @@ input[type=submit]:hover {
   display: block;
   font-size: 16px;
   font-weight: 600;
-  height: 50px;
-  line-height: 50px;
+  height: 35px;
+  /* line-height: 25px; */
   padding: 0 26px;
   transition: all 0.3s ease 0s; }
 
@@ -5311,10 +5405,15 @@ input[type=submit]:hover {
     font-weight: 500;
     padding: 0 26px; } }
 @media only screen and (max-width: 767px) {
+  .cart__btn__list li a, .cart__btn__list li span {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 16px;
+  height: 10px; }
   .cart__btn__list li {
     flex-basis: 50%;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center; }
 .wn__team__area {
   padding-bottom: 70px;
@@ -6156,6 +6255,7 @@ section.wn_contact_area {
 	.wn__newsletter__area.bg-image--2 {
 	background:#f6f6f6;
 }
+
 	}
 @media only screen and (max-width: 767px) {
   .page-footer {
@@ -6314,7 +6414,36 @@ section.wn_contact_area {
 .wrapper-boxed-layout .header-menu {
 	width: calc(100% - 60px);
 	left: 30px; 
-}	  
+}	 
+ 
+.content__div__first, .content__div__forth {
+  position: absolute;
+}
+.content__div__second, .content__div__third {
+  position: relative;
+}
+.content__div__second .background__div__image__div {
+  width: 270px;
+  height: 240px;
+}
+.content__div__third .background__div__image__div {
+  width: 270px;
+  height: 240px;
+}
+.content__div__first .content__container__text  .tranform__div__text {
+  transform: translateX(120%);
+}
+.content__div__second .background__div__image__div {
+  transform: translate(40%, 105%);
+}
+.content__div__third .background__div__image__div {
+  transform: translate(5%, -95%);
+}
+.content__container__text {
+  background-color: rgba(126, 45, 83, 0.1);
+  padding-left: 6%;
+  padding-right: 6%;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 .wrapper-boxed-layout {
@@ -6341,6 +6470,40 @@ section.wn_contact_area {
 }
 section.wn_contact_area {
   padding-bottom: 60px;
+}
+.homepage__wrapper .bg--white {
+  margin-top: 160px;
+}
+.content__div__first, .content__div__forth {
+  position: absolute;
+}
+.content__div__second, .content__div__third {
+  position: relative;
+}
+.content__div__second .background__div__image__div {
+  width: 210px;
+  height: 180px;
+}
+.content__div__third .background__div__image__div {
+  width: 210px;
+  height: 180px;
+}
+.content__div__first .content__container__text  .tranform__div__text {
+  transform: translateX(0%);
+}
+.content__div__second .background__div__image__div {
+  transform: translate(70%, -65%);
+}
+.content__div__third .background__div__image__div {
+  transform: translate(70%, 30%);
+}
+/* .content__div__forth .content__container__text  .tranform__div__text__second {
+  transform: translateY(-90%);
+} */
+.content__container__text {
+  background-color: rgba(126, 45, 83, 0.1);
+  /* padding-left: 0%;
+  padding-right: 0%; */
 }
 }
 
