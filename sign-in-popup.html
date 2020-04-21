@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Sign In Popup</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cusom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 26px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        /* Set a style for all buttons */
+        
+        /* The popup (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        /* Modal Content Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 4% auto 15% auto;
+            border: 1px solid #888;
+            width: 40%;
+            padding: 30px;
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #7E2D53;
+            cursor: pointer;
+        }
+
+        .addtocart__actions .tocart {
+            background: #7E2D53 none repeat scroll 0 0;
+            width: 45%;
+            transform: translateX(100%);
+            border: 0 none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 25px;
+            text-transform: uppercase;
+        }
+
+        .product__info__main .box-tocart .addtocart__actions .tocart:hover {
+            background-color: #7E2D53;
+            border-color: #7E2D53;
+        }
+
+        .verification__register {
+            transform: translateX(45%);
+        }
+
+        .verification__register span {
+            color: #777;
+            margin-right: 15px;
+        }
+
+        .verification__register span a {
+            color: #7E2D53;
+            font-weight: 600;
+        }
+
+        .connect__text {
+            padding-left: 10px;
+            transform: translateY(20%);
+        }
+
+        .connect__text h4 {
+            color: #7E2D53;
+            font-weight: 600;
+        }
+
+        /* Add Zoom Animation */
+        .animate {
+            animation: zoom 0.6s
+        }
+
+        .container__popup__signin .forget__password {
+            text-decoration: none;
+            float: right;
+            margin-right: 34px;
+            margin-top: 26px;
+            color: #7E2D53;
+            font-weight: 600;
+        }
+
+        .signIn__popup__header {
+            color: #7E2D53;
+            text-align: left;
+            padding-left: 20px;
+        }
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center; font-size:50px; color:#fff">Modal Popup Box Login Form</h1>
+
+    <div onclick="document.getElementById('modal-wrapper').style.display='block'" class="addtocart__actions mt--40">
+        <button class="tocart" type="submit" title="Add to Cart">Button</button>
+    </div>
+    <!-- <button onclick="document.getElementById('modal-wrapper').style.display='block'"
+        style="width:200px; margin-top:200px; margin-left:160px;">
+        Open Popup</button> -->
+
+    <div id="modal-wrapper" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close"
+                    title="Close PopUp">&times;</span>
+
+                <h2 class="signIn__popup__header">Contact</h2>
+            </div>
+
+            <div class="container__popup__signin mt--30">
+                <input type="text" placeholder="Username" name="uname">
+                <input type="password" placeholder="Password" name="psw">
+                <input type="checkbox" style="margin:26px 30px;"> Create an account
+                <a href="#" class="forget__password">Forgot Password ?</a>
+                <div class="addtocart__actions mt--40">
+                    <button class="tocart" type="submit" title="Add to Cart">log in</button>
+                </div>
+                <div class="verification__register mt--20">
+                    <span>Not a member yet? </span>
+                    <span><a href="#">Register Now</a></span>
+                </div>
+                <div class="connect__text mt--90">
+                    <h4>Connect With Social Networks</h4>
+                </div>
+                <ul class="social__net social__net--2 d-flex justify-content-center">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-google"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script>
+        // If user clicks anywhere outside of the modal, Modal will close
+
+        var modal = document.getElementById('modal-wrapper');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
