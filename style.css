@@ -878,6 +878,9 @@ a {
     padding-top: 100px !important; }
   .xs-mt--30 {
     margin-top: -30px !important; }
+  .homepage__wrapper .maincontent .container .row .do--not--show {
+    display: none;
+  }
   .xs-pb-0 {
     padding-bottom: 0 !important; } }
 	
@@ -973,8 +976,38 @@ Elements Styles
   position: relative;
   text-transform: uppercase;
 }
-.wn__newsletter__area {
-  text-align: center;
+.homepage__wrapper .maincontent .container .row .absolute__first__col, .maincontent .container .row .absolute__second__col {
+  position: absolute;
+  transform: translateY(-90%);
+  height: 175px;
+  width: 550px;
+}
+.homepage__wrapper .maincontent .container .row .relative__first__col{
+  position: relative;
+  padding: 35% 4% 6% 4%;
+  width: 65%;
+  display: inline-block;
+  border: 1px solid black;
+  transform: translate(35%, -65%);
+}
+.homepage__wrapper .maincontent .container .row .relative__second__col {
+  position: relative;
+  padding: 35% 4% 6% 4%;
+  width: 65%;
+  display: inline-block;
+  border: 1px solid black;
+  transform: translate(15%, -60%);
+}
+.homepage__wrapper .maincontent .container .row .relative__first__col .shop__now__btn__second,
+.homepage__wrapper .maincontent .container .row .relative__second__col .shop__now__btn__second {
+  background-color: #7E2D53;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+}
+.homepage__wrapper .maincontent .container .row .relative__first__col .shop__now__btn__second a,
+.homepage__wrapper .maincontent .container .row .relative__second__col .shop__now__btn__second a {
+  color: #fff;
 }
 .wn__newsletter__area .section__title > h2 {
   letter-spacing: 2px;
@@ -4597,6 +4630,19 @@ h3.widget-title-modal {
 /*--------------------------
   About Styles
 ----------------------------*/
+
+.page-about .container .row .border__left {
+  border-left: 1px solid #7E2D53;
+  
+}
+.page-about .container .row .border__left .firstRowHistorySectionContentDiv {
+  background-color: rgba(126, 45, 83, 0.1);
+  /* padding: 3%; */
+}
+.page-about .container .row .border__right {
+  border-right: 1px solid #7E2D53;
+  /* padding: 3%; */
+}
 
 .page-about .sectionAboutMediaLeftImage  {
   width: 420px;
