@@ -1099,7 +1099,11 @@ Elements Styles
     display: none;
   }
   .show--me {
-    display: initial;
+    display: inline-block;
+  }
+  .show--me--center {
+    display: inline-block;
+    
   }
   .homepage__wrapper .maincontent .container .row .absolute__first__col, .maincontent .container .row .absolute__second__col {
     position: absolute;
@@ -4069,7 +4073,10 @@ h3.widget-title-modal {
   padding: 3px 0 0;
 }
   .product__info__main .product-reviews-summary .rating-summary {
-    margin-right: 8px; }
+    margin-right: 8px;
+    position: absolute;
+    transform: tra;
+ }
 .wn__single__product .product-reviews-summary .rating-summary li i {
   color: #e59285;
   font-size: 18px;
@@ -5871,10 +5878,11 @@ a.checkout__title {
 .related__products__block__display__flex {
   display: flex;
   width: 100%;
-}
-.related__products__block__display__flex .related__products__block {
+} 
+ .related__products__block__display__flex .related__products__block {
   width: 25%;
 }
+
 .wedget__categories.poroduct--cat {
   margin: 0 0 30px; }
   .wedget__categories.poroduct--cat ul li {
