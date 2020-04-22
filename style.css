@@ -330,14 +330,14 @@ ins {
   }
 
 /* Placeholder text color -- selectors need to be separate to work. */
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
   color: #7d7b6d; }
 
 :-moz-placeholder {
   color: #7d7b6d; }
 
 :-ms-input-placeholder {
-  color: #7d7b6d; }
+  color: #7d7b6d; } */
 
 /**
 Typography
@@ -1015,6 +1015,15 @@ Elements Styles
   padding: 10px 20px;
   color: #fff;
 }
+.tranform__div__text .shop__now__btn__second, .tranform__div__text__second .shop__now__btn__second {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.tranform__div__text .shop__now__btn__second a, .tranform__div__text__second .shop__now__btn__second a {
+  color: #7E2D53;
+  font-weight: 600;
+}
+
 .homepage__wrapper .maincontent .container .row .relative__first__col .shop__now__btn__second a,
 .homepage__wrapper .maincontent .container .row .relative__second__col .shop__now__btn__second a {
   color: #fff;
@@ -4153,6 +4162,12 @@ h3.widget-title-modal {
   padding: 0 25px;
   text-transform: uppercase;
 }
+.addtocart__actions .tocart a {
+  color: #fff;
+}
+.addtocart__actions .tocart a:hover{
+  color: #fff;
+}
 .product__info__main span.posted_in {
   color: #353535;
   font-size: 14px;
@@ -4956,7 +4971,7 @@ h3.widget-title-modal {
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
   /* border-radius: 4px; */
@@ -4991,21 +5006,22 @@ input[type=submit]:hover {
 /* Contact Page Style Ends  */
 
 
-.contact__title {
+/* .contact__title {
   color: #2e2e2e;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
-}
+} */
 .contact-form-wrap p {
   color: #333;
   margin-bottom: 35px;
 }
 .contact-form-wrap .single-contact-form {
-  margin: 0 0 35px; }
+  margin: 0 0 25px;
+ }
   .contact-form-wrap .single-contact-form.space-between {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     margin-left: -10px;
     margin-right: -10px; }
@@ -5014,46 +5030,30 @@ input[type=submit]:hover {
 .contact-form-wrap .single-contact-form input {
   border: 1px solid #c1c1c1;
   border-radius: 0;
-  height: 42px;
-  outline: medium none;
-  padding: 0 0px;
-  width: 100%;
-  border-bottom: 1px solid #c1c1c1;
-  border-left: 0;
+  height: 45px;
+  /* outline: medium none; */
+  padding: 12px;
+  width: 90%;
+  border: 1px solid #c1c1c1;
+  /* border-left: 0;
   border-right: 0;
-  border-top: 0;
+  border-top: 0; */
 }
   .contact-form-wrap .single-contact-form textarea {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 1px solid #c1c1c1;
-	border-bottom: 1px solid #c1c1c1;
     border-radius: 0;
-    max-width: 100%;
-    padding: 10px;
+    padding: 12px;
+    width: 92%;
     height: 180px;
-    padding: 0px;
-	border-left: 0;
+    /* max-width: 100%; */
+    /* padding: 0px; */
+	  /* border-left: 0;
     border-right: 0;
-    border-top: 0;
-    width: 100%;
-    outline: none; }
-.contact-form-wrap .contact-btn button {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: 2px solid #333;
-  box-shadow: none;
-  color: #333;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 34px;
-  padding: 2px 20px 0;
-  text-shadow: none;
-  text-transform: uppercase;
-  transition: all 0.4s ease 0s; }
-  .contact-form-wrap .contact-btn button:hover {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border-color: #e59285;
-    color: #e59285; }
+    border-top: 0; */
+    /* outline: none; */
+  }
+
 .wn__address p {
   color: #333;
   margin-bottom: 35px;
@@ -5441,6 +5441,9 @@ input[type=submit]:hover {
     font-weight: 500;
     padding: 0 16px;
   height: 10px; }
+  .contact-form-wrap .single-contact-form textarea {
+    width: 94%;
+  } 
   .cart__btn__list li {
     flex-basis: 50%;
     margin-bottom: 20px;
