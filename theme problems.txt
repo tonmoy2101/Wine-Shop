@@ -1,0 +1,11 @@
+Home Page : 
+
+1. bottle border add
+2. slider text a lil bit down and wider
+3. second section side border add
+4. product section background shade add and price & name shifting exactly
+5. last section background add
+
+History Page : 
+
+1. text border problem

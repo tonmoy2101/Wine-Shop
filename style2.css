@@ -1,0 +1,410 @@
+/* body {
+    max-width: 1500; 
+    margin: auto;
+    padding: auto;
+} */
+
+/* NavBar Style  */
+
+.headerContainer {
+    display: flex;
+}
+
+.siteLogo {
+    width: 30%;
+}
+
+.navbar-collapse {
+    text-align: center;
+    width: 40%;
+}
+
+.accountSectionHeader {
+    width: 30%;
+}
+
+.header {
+    display: flex !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 0px 1% 15%;
+}
+
+.headerLogo {
+    width: 40%;
+}
+
+.navBar {
+    width: 60%;
+}
+
+.imageLogo {
+    max-width: 100px;
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: right;
+}
+
+li a:hover {
+    color: #1067a9;
+}
+
+  /* NavBar Style Ends */
+
+ /* About Page Style Starts  */
+
+.sectionAboutMediaLeft, .sectionAboutMediaRight {
+    width: 100%;
+    align-items: center;
+}
+
+.sectionAboutMediaLeftFullDiv, .sectionAboutMediaRightFullDiv {
+    display: flex;
+    /* height: 500px !important; */
+}
+
+.sectionAboutMediaLeftImage, .sectionAboutMediaRightImage {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+}
+
+.sectionAboutMediaLeftContent, .sectionAboutMediaRightContent {
+    width: 50%;
+    margin: auto;
+}
+
+/* img {
+    height: 100%;
+    width: auto;
+} */
+
+.sectionAboutMediaLeftContentBtnSeeMore, .sectionAboutMediaRightContentBtnSeeMore {
+    padding: 3% 10%;
+    border: 1px solid black;
+}
+
+.sectionAboutTestimonial {
+    border: 1px black solid;
+}
+
+.aboutFullTestimonial {
+    text-align: center;
+}
+
+.testimonialImagePerson {
+    border-radius: 50%;
+}
+
+ /* About Page Style Ends  */
+
+/* Contact Page Style Starts  */
+
+.contactSection, .historySection, .aboutSection, .shopSection, .singleShopPageFull {
+    padding: 10%;
+}
+
+.vertical4ColumnRowContact {
+    display: flex;
+}
+
+.column1, .column2, .column3, .column4 {
+    width: 25%;
+    text-align: left;
+}
+
+.iframeContactMap {
+    width: 100%;
+    height: 450px;
+    border:0;
+}
+
+/* Contact Form Design */
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #7E2D53;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #7E2D53;
+}
+
+.container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+}
+
+.contactFormMine {
+    margin: auto;
+}
+
+/* Contact Page Style Ends  */
+
+/* History Page Style Starts   */
+
+.firstRowHistorySection, .secondRowHistorySection, .thirdRowHistorySection, .forthRowHistorySection {
+    display: flex;
+    margin: auto;
+}
+
+.firstRowHistorySectionImageDiv, .secondRowHistorySectionImageDiv, .thirdRowHistorySectionImageDiv, .forthRowHistorySectionImageDiv {
+    margin: auto;
+    width: 40%;
+    /* border-right: 2px solid #7E2D53; */
+}
+.secondRowHistorySectionImageDiv, .forthRowHistorySectionImageDiv {
+    text-align: right;
+}
+
+.firstRowHistorySectionContentDiv, .secondRowHistorySectionContentDiv, .thirdRowHistorySectionContentDiv, .forthRowHistorySectionContentDiv {
+    margin: auto;
+    width: 60%;
+    /* border-left: 2px solid #7E2D53; */
+}
+
+.boxedParagraphHistorySection {
+    background-color: #E7E7E7;
+    padding: 3%;
+}
+
+.headingHistorySection {
+    padding: 3%;
+}
+
+.containerVerticalLineHistorySection {
+    width: 2%;
+    /* text-align: center; */
+}
+
+.verticalLineHistorySection {
+    width: 1px;
+    height: 100%;
+    background-color: #7E2D53;
+}
+
+/* History Page Style Ends   */
+
+
+
+/* Shop Page Style Starts  */
+
+.productColumn {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn_shop_Now_Product {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #7E2D53;
+    color: white;
+}
+
+.product {
+    border: 1px solid #7E2D53;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.productLabel a {
+    color: black;
+}
+
+.img-fluid {
+    width: 85px;
+    height: 350px;
+}
+
+.productCategory a{
+    color: black;
+}
+
+/* Shop Page Style Ends  */
+
+
+/* Shop Page Single Style Starts  */
+
+.singleProductSection {
+    display: flex;
+}
+
+.onlyProductPart {
+    width: 100%;
+}
+
+.onlyPrtPart {
+    width: 70%;
+}
+
+.singleShopPageCategorySection {
+    width: 30%;
+}
+
+.productShortDetailsRow {
+    display: flex;
+}
+
+.productGalleryOne, .productGalleryTwo, .productGalleryThree, .productGalleryFour {
+    height: 25%;
+}
+
+/* Shop Page Single Style Ends */
+
+
+ /* home page slider starts */
+
+ @keyframes slideShow {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure .sliderImages {
+    text-align: center;
+    height: 500px;
+    top: 40%;
+    width: 20%;
+    float: left;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+#slider figure .sliderImages img {
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slideShow infinite;
+}
+.sliderImages {
+    width: 100%;
+    background-color: #7E2D53;
+}
+
+.bannerHeadings {
+    padding: 5%;
+    margin-top: -1%;
+    margin-left: 7%;
+    text-align: center;
+    color: white;
+}
+
+.sliderContent {
+    transform: translate(65%, 80%);
+}
+
+.sliderContentText {
+    text-align: right;
+    color: white;
+    font-size: 12px;
+    width: 25%;
+}
+
+.shopNowBTNHomeSliderBanner {
+    padding: 3% 10%;
+    font-weight: 600;
+    color: #7E2D53;
+    border: none;
+    background-color: white;
+}
+
+/* .bannerHeadings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 4;
+    transition: 2s;
+    stroke-dasharray: 980;
+    stroke-dashoffset: 980;
+} */
+
+
+
+  /* home page slider ends */
